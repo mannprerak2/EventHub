@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pkmnapps.eventsdtu.EventActivity"
+    tools:showIn="@layout/activity_event">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/progressBar2"
+            android:foregroundGravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/textView_this_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorName"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_this_event_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_this_event_name"
+            android:padding="10dp"
+            android:textColor="@color/colorBy"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView_this_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_this_event_by"
+            android:padding="10dp"
+            android:textColor="@color/colorDate"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView_this_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_this_event_by"
+            android:layout_toEndOf="@+id/textView_this_event_date"
+            android:padding="10dp"
+            android:textColor="@color/colorLocation"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView_this_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_this_event_location"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView_this_event_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_this_event"
+            android:autoLink="web"
+            android:padding="10dp"
+            android:textColor="@color/colorDescp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

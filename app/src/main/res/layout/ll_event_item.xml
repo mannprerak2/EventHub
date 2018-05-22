@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorName"
+            android:id="@+id/textView_event_name"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+             />
+
+            <CheckBox
+                android:id="@+id/button_pin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:button="@drawable/star_selector"
+                android:layout_gravity="end"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/colorDescp"
+            android:minLines="1"
+            android:maxLines="2"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:id="@+id/textView_event_descp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_event_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorLocation" />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/colorOrganiser"
+                android:id="@+id/textView_event_organiser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="1dp"
+                android:textStyle="italic"
+                android:textColor="@color/colorCategory"
+                android:id="@+id/textView_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/textView_event_date"
+                android:textColor="@color/colorDate"
+                android:textAlignment="viewEnd"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

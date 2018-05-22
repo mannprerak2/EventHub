@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4680ba</color>
+    <color name="colorPrimaryDark">#2d5c8c</color>
+    <color name="colorAccent">#9b5959</color>
+    <color name="colorAccentFocus">#ffffff</color>
+    <color name="colorGrey">#e6e6e6</color>
+    <color name="colorName">#000000</color>
+    <color name="colorDescp">#7b7b7b</color>
+    <color name="colorLocation">#307c9f</color>
+    <color name="colorOrganiser">#815f27</color>
+    <color name="colorCategory">#c4c4c4</color>
+    <color name="colorDate">#329f30</color>
+    <color name="colorBy">#934747</color>
+    <color name="colorLightGrey">#ededed</color>
+    <color name="colorDarkGrey">#9c9c9c</color>
+    <color name="colorBlackAlpha">#50000000</color>
+    <color name="colorWhiteAlpha">#50ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorStar">#2d5c8c</color>
+
+    <!--ff4a40-->
+    <!--<color name="colorAccent">#30789f</color>-->
+
+    <!--<color name="colorPrimary">#b53f3f</color>-->
+    <!--<color name="colorPrimaryDark">#9f3030</color>-->
+
+    <!--<color name="colorPrimary">#016bb7</color>-->
+    <!--<color name="colorPrimaryDark">#034e84</color>-->
+
+    <!--<color name="colorPrimary">#274b6c</color>-->
+    <!--<color name="colorPrimaryDark">#1c3d5b</color>-->
+
+    <!--<color name="colorPrimary">#5e717c</color>-->
+    <!--<color name="colorPrimaryDark">#47555E</color>-->
+</resources>

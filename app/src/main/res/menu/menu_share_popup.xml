@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/share_image"
+        android:title="@string/share_event_image"/>
+
+    <item
+        android:id="@+id/share_desc"
+        android:title="@string/share_event_description"/>
+
+    <item
+        android:id="@+id/share_link"
+        android:title="@string/share_event_link"/>
+
+</menu>

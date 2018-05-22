@@ -1,0 +1,64 @@
+<android.support.v4.widget.NestedScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:isScrollContainer="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pkmnapps.eventsdtu.SearchFragment"
+    android:padding="5dp">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Events..." />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/searchSociety"
+            fancy:fb_text="Societies"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="@color/colorAccentFocus"
+            fancy:fb_radius="10dp"
+            fancy:fb_iconResource="@drawable/ic_youtube_searched_for_black_24dp"
+            fancy:fb_iconPosition="left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/searchCollege"
+            fancy:fb_text="Colleges"
+            fancy:fb_defaultColor="@color/colorAccent"
+            fancy:fb_focusColor="@color/colorAccentFocus"
+            fancy:fb_radius="10dp"
+            fancy:fb_iconResource="@drawable/ic_youtube_searched_for_black_24dp"
+            fancy:fb_iconPosition="left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

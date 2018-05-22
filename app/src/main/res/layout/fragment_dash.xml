@@ -1,0 +1,78 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            fancy:fb_text="Events"
+            android:layout_margin="5dp"
+            fancy:fb_radius="10dp"
+            fancy:fb_defaultColor="#ab4848"
+            fancy:fb_focusColor="@color/colorAccentFocus"
+            fancy:fb_textSize="30sp"
+            android:padding="7dp"
+            fancy:fb_iconResource="@drawable/ic_event_black_24dp"
+            fancy:fb_iconPosition="top"
+            android:id="@+id/eventsButton"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <mehdi.sakout.fancybuttons.FancyButton
+                fancy:fb_text="Societies"
+                android:layout_margin="5dp"
+                fancy:fb_radius="10dp"
+                fancy:fb_defaultColor="#4b6fb7"
+                fancy:fb_focusColor="@color/colorAccentFocus"
+                fancy:fb_textSize="30sp"
+                fancy:fb_iconResource="@drawable/ic_group_work_black_24dp"
+                fancy:fb_iconPosition="top"
+                android:id="@+id/societiesButton"
+                android:padding="7dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="130dp"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                fancy:fb_text="Colleges"
+                android:layout_margin="5dp"
+                fancy:fb_radius="10dp"
+                fancy:fb_defaultColor="#845251"
+                fancy:fb_focusColor="@color/colorAccentFocus"
+                fancy:fb_textSize="30sp"
+                android:padding="7dp"
+                fancy:fb_iconResource="@drawable/ic_local_library_black_24dp"
+                fancy:fb_iconPosition="top"
+                android:id="@+id/collegesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"/>
+
+        </LinearLayout>
+    <mehdi.sakout.fancybuttons.FancyButton
+        fancy:fb_text="Pinned Societies"
+        android:layout_margin="5dp"
+        fancy:fb_radius="10dp"
+        fancy:fb_defaultColor="#999999"
+        fancy:fb_focusColor="@color/colorAccentFocus"
+        fancy:fb_textSize="30sp"
+        android:padding="7dp"
+        fancy:fb_iconResource="@drawable/ic_notifications_black_24dp"
+        fancy:fb_iconPosition="top"
+        android:id="@+id/subscribedButton"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"/>
+
+
+</LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pkmnapps.eventsdtu.FeaturedHomeFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                >
+
+            </com.daimajia.slider.library.SliderLayout>
+            <!--<ViewFlipper-->
+                <!--android:id="@+id/flipper"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:layout_gravity="center_horizontal|top"-->
+                <!--android:layout_width="350dp"-->
+                <!--android:layout_height="300dp" >-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image1_featured"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image2_featured"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image3_featured"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image4_featured"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image5_featured"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/image6_featured"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+
+
+            <!--</ViewFlipper>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:paddingBottom="100dp"
+                android:clipToPadding="false"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
